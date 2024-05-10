@@ -6,4 +6,4 @@ Welcome, we are team Monomon and we made Mixed Reality Deckdown - a two-player c
 
 ## Shared Spatial Anchor and Colocation
 
-We used Meta's Shared Spatial Anchor API to enable a colocation experience. In order to enable SSA and colocation features for your device, contact repo owner to get your Meta account added to the release channels so you can experience colocation in our game.
+We used Meta's Shared Spatial Anchor API to enable a colocation experience. In order to enable SSA and colocation features for your device, create an issue to contact repo owner to get your Meta account added to the release channels so you can experience colocation in our game.
