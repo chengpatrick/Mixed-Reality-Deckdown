@@ -1,0 +1,61 @@
+%YAML 1.1
+%TAG !u! tag:unity3d.com,2011:
+--- !u!1 &2569891631797910688
+GameObject:
+  m_ObjectHideFlags: 0
+  m_CorrespondingSourceObject: {fileID: 0}
+  m_PrefabInstance: {fileID: 0}
+  m_PrefabAsset: {fileID: 0}
+  serializedVersion: 6
+  m_Component:
+  - component: {fileID: 6262275549878783176}
+  - component: {fileID: 8354415302371856593}
+  m_Layer: 0
+  m_Name: BootstrapChochi
+  m_TagString: Untagged
+  m_Icon: {fileID: 0}
+  m_NavMeshLayer: 0
+  m_StaticEditorFlags: 0
+  m_IsActive: 1
+--- !u!4 &6262275549878783176
+Transform:
+  m_ObjectHideFlags: 0
+  m_CorrespondingSourceObject: {fileID: 0}
+  m_PrefabInstance: {fileID: 0}
+  m_PrefabAsset: {fileID: 0}
+  m_GameObject: {fileID: 2569891631797910688}
+  serializedVersion: 2
+  m_LocalRotation: {x: 0, y: 0, z: 0, w: 1}
+  m_LocalPosition: {x: 0, y: 0, z: 0}
+  m_LocalScale: {x: 1, y: 1, z: 1}
+  m_ConstrainProportionsScale: 0
+  m_Children: []
+  m_Father: {fileID: 0}
+  m_LocalEulerAnglesHint: {x: 0, y: 0, z: 0}
+--- !u!114 &8354415302371856593
+MonoBehaviour:
+  m_ObjectHideFlags: 0
+  m_CorrespondingSourceObject: {fileID: 0}
+  m_PrefabInstance: {fileID: 0}
+  m_PrefabAsset: {fileID: 0}
+  m_GameObject: {fileID: 2569891631797910688}
+  m_Enabled: 1
+  m_EditorHideFlags: 0
+  m_Script: {fileID: 11500000, guid: 7db689e0cf802fb44a12b1d412d3f05e, type: 3}
+  m_Name: 
+  m_EditorClassIdentifier: 
+  monsterType: 1
+  myCardManager: {fileID: 0}
+  myVFXmanager: {fileID: 0}
+  BallPrefab: {fileID: 7373185534789905763, guid: 4fc9e85fe6e262147aac021049434249, type: 3}
+  BlockPrefab: {fileID: 7373185534789905763, guid: febddb125877c2548b11f3ab56341aa8, type: 3}
+  MonsterCollectPrefab: {fileID: 706835817376471635, guid: fb32853409158514da3af562f9e43d6a, type: 3}
+  SoulPrefab: {fileID: 7332179057623125458, guid: 9253ebe47c15a414fbc53ade34d9ad09, type: 3}
+  SpecialAttackPrefab: {fileID: 1068859601998369507, guid: a7677e6ef95840d4da359f8491556d15, type: 3}
+  vfxChargeup: {fileID: 5112550880343784918, guid: 5aacf5a7d8876104db40e211d6899410, type: 3}
+  vfxHitBlock: {fileID: 2985776528273837331, guid: 7fb0b8ec79b441b42a9668cd0a3aa660, type: 3}
+  vfxHitWall: {fileID: 2985776528273837331, guid: 7fb0b8ec79b441b42a9668cd0a3aa660, type: 3}
+  vfxHitGround: {fileID: 8564749555528216901, guid: 0cb092b2dada1034bb01bcaba712a3e9, type: 3}
+  myMonsterGivePower: {fileID: 5868063552882689881, guid: cc2a9d704adca204f80eb3bf93879853, type: 3}
+  AimAssistMaterial: {fileID: 2100000, guid: 0acb511c4442f0644b7091e7074c166c, type: 2}
+  statUIPanel: {fileID: 21300000, guid: 85a740d17ce6aeb42915fe49e015bf81, type: 3}

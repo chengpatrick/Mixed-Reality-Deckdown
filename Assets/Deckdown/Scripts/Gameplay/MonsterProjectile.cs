@@ -1,0 +1,94 @@
+using System.Collections;
+using System.Collections.Generic;
+using Fusion;
+using Photon.Voice;
+using UnityEngine;
+using UnityEngine.UIElements;
+
+public class MonsterProjectile : MonoBehaviour
+{
+    [SerializeField] GameObject myMonster;
+    [SerializeField] float speed = 2f;
+    [SerializeField] float radius = 2f;
+    [SerializeField] int typeID;
+    [SerializeField] GameObject captureZone;
+
+    // Start is called before the first frame update
+    void Start()
+    {
+        Debug.Log("spawn monster projectile!");
+        // Destroy(gameObject, 10f);
+    }
+
+    // Update is called once per frame
+    void Update()
+    {
+        // transform.Translate(Vector3.left * speed * Time.deltaTime);
+    }
+
+    public GameObject GetMonsterObj()
+    {
+        return myMonster;
+    }
+
+
+    public void OnTriggerEnter(Collider other)
+    {
+        Debug.Log(other.tag);
+        if (other.tag == "Blocker")
+        {
+            GameObject sphere = Instantiate(captureZone, transform.position, Quaternion.identity);
+            sphere.SetActive(true);
+            sphere.transform.localScale = Vector3.one * radius;
+
+            gameObject.GetComponent<BoxCollider>().enabled = false;
+            gameObject.GetComponent<SphereCollider>().enabled = false;
+            myMonster.SetActive(false);
+            StartCoroutine(RetrieveMonster(5f, sphere));
+
+            Collider[] allColliders = Physics.OverlapSphere(transform.position, radius);
+
+            foreach (Collider collider in allColliders)
+            {
+                GameObject hitObject = collider.gameObject;
+                Soul currSoul = hitObject.transform.parent.GetComponent<Soul>();
+
+                if (currSoul != null)
+                {
+                    //DebugPanel.Instance.UpdateMessage("object contains soul");
+                    //currSoul.OnCapture(typeID);
+                }
+
+                // Do something with the hitObject
+                //Debug.Log("Hit object: " + hitObject.name);
+            }
+        }
+    }
+
+
+    IEnumerator RetrieveMonster(float t, GameObject sphere)
+    {
+        yield return new WaitForSeconds(t);
+
+        if(GetComponent<MonsterCollectPickUp>() != null)
+        {
+            Destroy(sphere);
+
+            gameObject.GetComponent<BoxCollider>().enabled = true;
+            gameObject.GetComponent<SphereCollider>().enabled = true;
+            myMonster.SetActive(true);
+            GetComponent<MonsterCollectPickUp>().ResetMonsterPosition();
+        }
+            
+    }
+
+    public void SetTypeID(int id)
+    {
+        typeID = id;
+    }
+
+    public int GetTypeID()
+    {
+        return typeID;
+    }
+}

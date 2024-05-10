@@ -1,0 +1,61 @@
+%YAML 1.1
+%TAG !u! tag:unity3d.com,2011:
+--- !u!1 &2569891631797910688
+GameObject:
+  m_ObjectHideFlags: 0
+  m_CorrespondingSourceObject: {fileID: 0}
+  m_PrefabInstance: {fileID: 0}
+  m_PrefabAsset: {fileID: 0}
+  serializedVersion: 6
+  m_Component:
+  - component: {fileID: 6262275549878783176}
+  - component: {fileID: 8354415302371856593}
+  m_Layer: 0
+  m_Name: BootstrapNooki
+  m_TagString: Untagged
+  m_Icon: {fileID: 0}
+  m_NavMeshLayer: 0
+  m_StaticEditorFlags: 0
+  m_IsActive: 1
+--- !u!4 &6262275549878783176
+Transform:
+  m_ObjectHideFlags: 0
+  m_CorrespondingSourceObject: {fileID: 0}
+  m_PrefabInstance: {fileID: 0}
+  m_PrefabAsset: {fileID: 0}
+  m_GameObject: {fileID: 2569891631797910688}
+  serializedVersion: 2
+  m_LocalRotation: {x: 0, y: 0, z: 0, w: 1}
+  m_LocalPosition: {x: 0, y: 0, z: 0}
+  m_LocalScale: {x: 1, y: 1, z: 1}
+  m_ConstrainProportionsScale: 0
+  m_Children: []
+  m_Father: {fileID: 0}
+  m_LocalEulerAnglesHint: {x: 0, y: 0, z: 0}
+--- !u!114 &8354415302371856593
+MonoBehaviour:
+  m_ObjectHideFlags: 0
+  m_CorrespondingSourceObject: {fileID: 0}
+  m_PrefabInstance: {fileID: 0}
+  m_PrefabAsset: {fileID: 0}
+  m_GameObject: {fileID: 2569891631797910688}
+  m_Enabled: 1
+  m_EditorHideFlags: 0
+  m_Script: {fileID: 11500000, guid: 7db689e0cf802fb44a12b1d412d3f05e, type: 3}
+  m_Name: 
+  m_EditorClassIdentifier: 
+  monsterType: 0
+  myCardManager: {fileID: 0}
+  myVFXmanager: {fileID: 0}
+  BallPrefab: {fileID: 7373185534789905763, guid: 7397d0f11eb1f884bb41c6ce185302d5, type: 3}
+  BlockPrefab: {fileID: 7373185534789905763, guid: febddb125877c2548b11f3ab56341aa8, type: 3}
+  MonsterCollectPrefab: {fileID: 706835817376471635, guid: a85b8d83b6184b74d8de60186e728e95, type: 3}
+  SoulPrefab: {fileID: 7332179057623125458, guid: 7c1b644314b803c49892b9463cc3ebd9, type: 3}
+  SpecialAttackPrefab: {fileID: 4403548040930676591, guid: 6f371095837f370489a00ca37756560d, type: 3}
+  vfxChargeup: {fileID: 5112550880343784918, guid: fcde468d609fc7a47bf33eb32c5f4030, type: 3}
+  vfxHitBlock: {fileID: 2985776528273837331, guid: 1e7d4a74f6c25e348944bd1daab30fe3, type: 3}
+  vfxHitWall: {fileID: 2985776528273837331, guid: 1e7d4a74f6c25e348944bd1daab30fe3, type: 3}
+  vfxHitGround: {fileID: 8564749555528216901, guid: 802e7426f75545a4f97577fbac9cf617, type: 3}
+  myMonsterGivePower: {fileID: 5868063552882689881, guid: 1f4473f4b6fefc84e9aba017098e7716, type: 3}
+  AimAssistMaterial: {fileID: 2100000, guid: 34bf5f1806ce6ce4eb9c25d6ea642607, type: 2}
+  statUIPanel: {fileID: 21300000, guid: ba71924937fda4f4aaf9c43462104122, type: 3}
