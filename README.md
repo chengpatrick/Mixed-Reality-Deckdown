@@ -10,4 +10,4 @@ We used Meta's Shared Spatial Anchor API to enable a colocation experience. In o
 
 ## How to Set Up Experience
 
-https://drive.google.com/drive/folders/1dS2uDG0LnqvgUTCNhr3vKeBoTTu6E2Bu?usp=drive_link
+![Setup Vid](./Media/MonomonMR_RoomSetUp.mp4 "Setup")
