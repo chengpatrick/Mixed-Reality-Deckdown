@@ -5,6 +5,7 @@
 Welcome, we are team Monomon and we made Mixed Reality Deckdown - a two-player colocated physical combat demo in mixed reality. 
 
 ## Shared Spatial Anchor and Colocation
+Use this link to add your Meta account to the test channel to experience colocation features: https://www.meta.com/s/1TGPtCN3fF
 
 We used Meta's Shared Spatial Anchor API to enable a colocation experience. In order to enable SSA and colocation features for your device, create an issue to contact repo owner to get your Meta account added to the release channels so you can experience colocation in our game.
 
